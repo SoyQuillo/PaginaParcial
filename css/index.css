@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+img {
+    color: #fff;
+    height: 50px;
+    margin-right: 15px;
+}
+
+body {
+    background-color: #ededed;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0a1a2a;
+    align-items: center;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: darkseagreen;
+}
+
+#contenedor a {
+    font-weight: 600px;
+    padding-right: 10px;
+}
+
+#contenedor a:hover {
+    color: white;
+}
+
+section img {
+    padding: 1px;
+    height: 700px;
+    width: 70%;
+
+}
+
+section {
+    display: flex;
+    gap: 30px;
+    
+}
+
+#section_div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    
+
+}
+
+section div h2 {
+    font-size: 50px;
+}
+
+.pie_pagina {
+    width: 100%;
+    background-color: #0a141d;
+}
+
+.pie_pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie_pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie_pagina .grupo-1 .box figure img {
+    width: 200px;
+    height: 200px;
+
+}
+
+.pie_pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie_pagina .grupo-1 .box p {
+    color: #efefefef;
+    margin-bottom: 10px;
+}
+
+.pie_pagina .grupo-1 .social-media {
+    font-size: 20px;
+    display: flex;
+    gap: 40px;
+    color: #fff;
+    border-radius: 1px solid #fff;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    cursor: crosshair;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out .6s;
+    margin-right: 5px;
+}
+
+.pie_pagina .grupo-1 .social-media > a > i:hover {
+    background-color: #5d6678;
+    border-color: #5d6678;
+}
+
+.pie_pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+/* PUNTO DE QUIEBRE */
+@media screen and (max-width: 700px) {
+    img {
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    #contenedor a {
+        padding-right: 5px;
+    }
+
+    section img {
+        height: auto;
+        width: 100%;
+    }
+
+    section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    section div h2 {
+        font-size: 30px;
+    }
+
+    .pie_pagina .grupo-1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pie_pagina .grupo-1 .box figure img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .pie_pagina .grupo-1 .box h2 {
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+    .pie_pagina .grupo-1 .box p {
+        margin-bottom: 5px;
+    }
+}
